@@ -1,0 +1,1 @@
+exports.id = require('./id');
