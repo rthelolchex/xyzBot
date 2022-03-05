@@ -1,11 +1,14 @@
 {
 	"lang": "id",
-	"prefix": "",
-	"ownerNumber": [],
+	"prefix": "!",
+	"ownerName": "rthelolchex",
+	"ownerNumber": [
+		"6285161212950"
+	],
 	"premiumUser": [],
 	"versionStatus": "DVLPMNT",
 	"buildDate": "20220214",
-	"packname": "",
-	"author": "",
-	"footer": ""
+	"packname": "xyzBot - reborn from rexproject",
+	"author": "rthelolchex@rexprjkt`pwned",
+	"footer": "© 𝙭𝙮𝙯𝘽𝙤𝙩 - reborn from rexproject"
 }

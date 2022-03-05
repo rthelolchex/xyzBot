@@ -1,5 +1,6 @@
 # Database
 database.json
+.database.json.tmp
 
 # Session
 session.data.json
@@ -9,3 +10,9 @@ node_modules
 
 # Package lock for node.js older version
 package-lock.json
+
+# config.json after configuration
+config.json
+
+# newUser after configuration
+newUser
