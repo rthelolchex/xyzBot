@@ -157,7 +157,7 @@ async function InitializeWA() {
   }
   
   conn.on("chat-update", async (chatUpdate) => {
-    if (chatUpdate.hasNewMessage && chatUpdate.messages && chatUpdate.count) {
+    if (chatUpdate.hasNewMessage && chatUpdate.messages) {
       let m = chatUpdate.messages.all()[0]
       if (!m || !m.message || m.key && m.key.remoteJid === 'status@broadcast') return
       // Load handlers
