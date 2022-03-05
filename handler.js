@@ -6,8 +6,18 @@ const {
 const lang = require('./lang');
 const util = require('util');
 const isNumber = x => typeof x === 'number' && !isNaN(x)
+const delay = ms => isNumber(ms) && new Promise(resolve => setTimeout(resolve, ms))
 
 module.exports = async(conn, m, chatUpdate) => {
+  switch (m.mtype) {
+    case MessageType.image:
+    case MessageType.video:
+    case MessageType.audio:
+    if (!m.key.fromMe) await delay(1000)
+    if (!m.msg.url) await conn.updateMediaMessage(m)
+    break
+  }
+  
   if (m.isBaileys) return
   global.botMessage = new lang[config.lang](config.prefix)
   let from = m.key.remoteJid;
